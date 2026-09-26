@@ -4,6 +4,8 @@ class Livre (id: String, private val titre :String,
              private val isbn:String,
             private var auteur: Auteur): ItemDeBiliothetique(id), Imprimable
 {
+
+
     init {
         auteur.ajouterLivres(this)
     }
